@@ -57,7 +57,7 @@ header {
 h2 {
     width: fit-content;
     height: fit-content;
-    font-family: 'JoyfulStory';
+    font-family: 'OTEnjoystoriesBA';
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
@@ -100,6 +100,7 @@ main {
 .phr1 p span {
     width: fit-content;
     height: fit-content;
+    font-family: 'GmarketSansBold';
     font-size: 24px;
     font-weight: 700;
 }
@@ -172,6 +173,7 @@ main {
 }
 
 .phr3 p span {
+    font-family: 'GmarketSansBold';
     font-size: 72px;
     font-weight: 700;
     width: fit-content;
@@ -210,9 +212,9 @@ button {
 }
 
 button p {
-    font-family: 'GMarketSans';
+    font-family: 'GmarketSansBold';
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 130%;
     color: var(--bg-color);
 }
@@ -271,7 +273,7 @@ footer p {
 }
 
 .container2 section p {
-    font-family: 'JoyfulStory';
+    font-family: 'OTEnjoystoriesBA';
     font-weight: 400;
     color: var(--bg-color);
     width: fit-content;
