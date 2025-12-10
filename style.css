@@ -1,7 +1,15 @@
+:root {
+    --letter-color: #FFFFFF;
+    --btn-color: #F5DF4D;
+    --bg-color: #5B2386;
+    --input-color: #BABCBE;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
 body {
     width: 100vw;
     height: auto;
-    background-color: #5B2386;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +61,7 @@ h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
-    color: #F5DF4D;
+    color: var(--btn-color);
     margin-bottom: 80px;
 }
 
@@ -82,7 +90,7 @@ main {
     height: 85px;
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--letter-color);
     text-align: center;
     position: absolute;
     top: 0;
@@ -109,7 +117,7 @@ main {
 .phr2 p {
     font-size: 24px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--letter-color);
 }
 
 .phr2 input {
@@ -118,20 +126,20 @@ main {
     border-radius: 8px;
     font-size: 24px;
     font-weight: 400;
-    color: #BABCBE;
+    color: var(--input-color);
     margin: 0 20px;
 }
 
 .phr2 input::placeholder {
     font-size: 24px;
     font-weight: 400;
-    color: #BABCBE;
+    color: var(--input-color);
 }
 
 .btn1 {
     width: 567px;
     height: 64px;
-    background-color: #FCEE21;
+    background-color: var(--btn-color);
     margin-bottom: 142px;
 }
 
@@ -158,7 +166,7 @@ main {
 .phr3 p {
     font-size: 24px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--letter-color);
     display: flex;
     align-items: center;
 }
@@ -184,18 +192,18 @@ main {
 .btngroup .btn2 {
     width: 365px;
     height: 64px;
-    background-color: #FCEE21;
+    background-color: var(--btn-color);
 }
 
 .btngroup .btn3 {
     width: 193px;
     height: 64px;
-    background-color: #FFFFFF;
+    background-color: var(--letter-color);
 }
 
 button {
     border-radius: 12px;
-    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 4px 10px 0 var(--shadow-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +214,7 @@ button p {
     font-size: 24px;
     font-weight: 700;
     line-height: 130%;
-    color: #5B2386;
+    color: var(--bg-color);
 }
 
 footer {
@@ -229,7 +237,7 @@ footer p {
     font-family: 'Noto Sans KR';
     font-size: 12px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--letter-color);
     text-align: center;
 }
 
@@ -237,8 +245,8 @@ footer p {
     width: 800px;
     height: 816px;
     border-radius: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--letter-color);
+    box-shadow: 4px 4px 30px 0 var(--shadow-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +273,7 @@ footer p {
 .container2 section p {
     font-family: 'JoyfulStory';
     font-weight: 400;
-    color: #5B2386;
+    color: var(--bg-color);
     width: fit-content;
     height: fit-content;
 }
@@ -289,7 +297,7 @@ footer p {
 .container2 button {
     width: 508px;
     height: 64px;
-    background-color: #FCEE21;
+    background-color: var(--btn-color);
 }
 
 @media (max-width:771px) {
