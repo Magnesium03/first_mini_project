@@ -17,6 +17,12 @@ body {
     position: relative;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
     width: 564px;
     height: 265px;
@@ -49,6 +55,12 @@ h2 {
     line-height: 40px;
     color: #F5DF4D;
     margin-bottom: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .phr1 {
@@ -197,7 +209,7 @@ button p {
     color: #5B2386;
 }
 
-.foot {
+footer {
     width: 365px;
     height: 84px;
     display: flex;
@@ -208,12 +220,12 @@ button p {
     margin-bottom: 106px;
 }
 
-.foot img {
+footer img {
     width: 168px;
     aspect-ratio: 168 / 36;
 }
 
-.foot p {
+footer p {
     font-family: 'Noto Sans KR';
     font-size: 12px;
     font-weight: 400;
@@ -230,6 +242,7 @@ button p {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .container2 {
@@ -240,7 +253,7 @@ button p {
     align-items: center;
 }
 
-.container2 div {
+.container2 section {
     width: 396px;
     height: 150px;
     display: flex;
@@ -249,7 +262,7 @@ button p {
     margin-bottom: 40px;
 }
 
-.container2 div p {
+.container2 section p {
     font-family: 'JoyfulStory';
     font-weight: 400;
     color: #5B2386;
@@ -257,12 +270,12 @@ button p {
     height: fit-content;
 }
 
-.container2 div p:nth-child(1) {
+.container2 section p:nth-child(1) {
     font-size: 96px;
     height: 106px;
 }
 
-.container2 div p:nth-child(2) {
+.container2 section p:nth-child(2) {
     font-size: 36px;
     height: 40px;
 }
@@ -279,7 +292,7 @@ button p {
     background-color: #FCEE21;
 }
 
-@media (max-width:567px) {
+@media (max-width:771px) {
     .container {
         width: 360px;
         height: 1052px;
@@ -420,18 +433,18 @@ button p {
         font-size: 14px;
     }
 
-    .foot {
+    footer {
         width: 261px;
         height: 62px;
         gap: 12px;
         margin-bottom: 48px;
     }
 
-    .foot img {
+    footer img {
         width: 125px;
     }
 
-    .foot p {
+    footer p {
         font-size: 9px;
     }
 
@@ -445,13 +458,13 @@ button p {
         height: 418px;
     }
 
-    .container2 div {
+    .container2 section {
         width: 251px;
         height: 110px;
         margin-bottom: 24px;
     }
 
-    .container2 div p:nth-child(1) {
+    .container2 section p:nth-child(1) {
         font-size: 64px;
         width: 251px;
         height: 70px;
