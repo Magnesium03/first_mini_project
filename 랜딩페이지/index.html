@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>랜딩 페이지</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+
         <header>
             <div class="container_navigation-bar">
                 <img src="./img/logo.svg" alt="HODU 로고">
@@ -15,7 +18,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
-                    <button>Download</button>
+                    <button class="btn-download">Download</button>
                 </nav>
             </div>
         </header>
@@ -24,8 +27,8 @@
             <section class="section-hero">
                 <div class="hero-content">
                     <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-                    <button>Download</button>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                    <button class="btn-download">Download</button>
                 </div>
                 <img src="./img/box-cat.png" alt="박스를 뒤집어쓴 고양이">
             </section>
@@ -64,10 +67,36 @@
                     </div>
                 </div>
             </section>
+            <img src="./img/img_5.jpg" alt="">
+            <botton class="scroll-top-btn">
+                <img src="./img/top-btn.svg" alt="페이지 맨 위로 이동">
+            </botton>
         </main>
-        <img src="./img/img_5.jpg" alt="">
         <footer>
-
+            <img src="./img/logo.svg" alt="HODU 로고">
+            <div class="social icons">
+                <div class="icon-blog">
+                    <img src="./img/blog.svg" alt="블로그 바로가기">
+                </div>
+                <div class="icon-insta">
+                    <img src="./img/instagram.svg" alt="인스타그램 바로가기">
+                </div>
+                <div class="icon-facebook">
+                    <img src="./img/facebook.svg" alt="페이스북 바로가기">
+                </div>
+                <div class="icon-youtube">
+                    <img src="./img/youtube.svg" alt="유튜브 바로가기">
+                </div>
+            </div>
         </footer>
+
+        <section class="modal">
+            <div class="container">
+                <img src="./img/cat-subscribe.png" alt="볼빨간 고양이">
+                <h2>Thank you!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                <button>OK! I Love HODU</button>
+            </div>
+        </section>
     </body>
 </html>
