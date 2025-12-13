@@ -403,6 +403,10 @@ footer .social-icons > div {
     align-items: center;
 }
 
+footer .footer-nav {
+    display: none;
+}
+
 .modal {
     width: 600px;
     height: 400px;
@@ -488,6 +492,7 @@ footer .social-icons > div {
 @media (max-width: 768px) {
     main {
         height: 2531px;
+        overflow: hidden;
     }
 
     header {
@@ -655,71 +660,58 @@ footer .social-icons > div {
         bottom: 0;
     }
 
-    main .img_5 {
-        width: 100%;
-        height: 340px;
-        background-image: url(./img/img_5.jpg);
-        background-repeat: no-repeat;
-        background-position: 0% 40%;
-        background-size: cover;
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-    }
-
-    main .img_5 .background {
-        width: 100%;
-        height: 100%;
-        background-color: var(--bg-color);
-        opacity: 60%;
-    }
-
     .scroll-top-btn {
-        width: 50px;
-        height: 50px;
-        border: solid 1px #c4c4c4;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        float: right;
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        z-index: 1;
+        display: none;
     }
 
     footer {
-        width: 100%;
-        height: 160px;
-        background-color: var(--btn-p-color);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        height: 178px;
+        position: relative;
     }
 
     footer > img {
-        width: 226px;
-        aspect-ratio: 226 / 70;
+        width: 112px;
+        aspect-ratio: 112 / 34;
+        position: absolute;
+        top: 32px;
+        left: 20px;
     }
 
     footer .social-icons {
-        width: 220px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        width: 176px;
+        height: 32px;
+        gap: 16px;
+        position: absolute;
+        left: 20px;
+        bottom: 24px;
     }
 
     footer .social-icons > div {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: var(--social-color);
+        width: 32px;
+        height: 32px;
+    }
+
+    footer .footer-nav {
+        display: block;
+        width: 85px;
+        height: 110px;
+        position: absolute;
+        right: 20px;
+        bottom: 24px;
+    }
+
+    footer .footer-nav ul {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    footer .footer-nav ul li {
+        color: #767676;
+        font-size: 14px;
+        font-weight: 400;
     }
 
     .modal {
