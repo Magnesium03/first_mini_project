@@ -355,21 +355,6 @@ main .img_5 .background {
     opacity: 60%;
 }
 
-.scroll-top-btn {
-    width: 50px;
-    height: 50px;
-    border: solid 1px #c4c4c4;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1;
-}
-
 footer {
     width: 100%;
     height: 160px;
@@ -407,16 +392,53 @@ footer .footer-nav {
     display: none;
 }
 
+.scroll-top-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF80;
+    border: solid 1px #c4c4c4;
+    border-radius: 100%;
+    position: relative;
+    position: fixed;
+    right: 20px;
+    bottom: 184px;
+    z-index: 1;
+}
+
+.scroll-top-btn .top-btn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+}
+
+.scroll-top-btn .top-btn-hover {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.scroll-top-btn .top-btn:hover {
+    z-index: -1;
+}
+
 .modal {
     width: 600px;
     height: 400px;
     border-radius: 30px;
-    background-image: url(./img/modal-bg-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
     display: none;
+}
+
+.modal > img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
 }
 
 .modal .container {
@@ -451,6 +473,10 @@ footer .footer-nav {
 .modal .container button {
     width: 191px;
     height: 52px;
+}
+
+.modal2 {
+    display: none;
 }
 
 @media (max-width: 1280px) {
@@ -715,48 +741,95 @@ footer .footer-nav {
     }
 
     .modal {
-        width: 600px;
-        height: 400px;
-        border-radius: 30px;
-        background-image: url(./img/modal-bg-img.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        display: none;
+        width: 300px;
+        height: 300px;
+        background-color: #F2E9D8;
+        z-index: -2;
+        /* display: none; */
+    }
+
+    .modal > img {
+        width: 300px;
+        height: 200px;
     }
 
     .modal .container {
-        width: fit-content;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
     }
 
     .modal .container img {
-        width: 110px;
-        aspect-ratio: 110 / 112;
-        margin-bottom: 24px;
+        width: 60px;
+        aspect-ratio: 60 / 62;
+        margin-top: 40px;
+        margin-bottom: 22px;
     }
 
     .modal .container h2 {
-        font-size: 36px;
-        font-weight: 700;
-        color: var(--btn-color);
-        margin-bottom: 12px;
+        font-size: 24px;
+        margin-bottom: 8px;
     }
 
     .modal .container p {
-        font-size: 14px;
-        font-weight: 400;
-        color: #000000;
-        margin-bottom: 34px;
+        width: 199px;
+        text-align: center;
+        margin-bottom: 26px;
     }
 
     .modal .container button {
-        width: 191px;
-        height: 52px;
+        width: 163px;
+        height: 40px;
+    }
+
+    .modal2 {
+        /* display: block; */
+        width: 390px;
+        height: 820px;
+        background-color: var(--btn-p-color);
+    }
+
+    .modal2 .menu-tab {
+        width: 289px;
+        height: 820px;
+        background-color: var(--sub-color);
+        float: right;
+        position: relative;
+    }
+
+    .modal2 .menu-tab img {
+        width: 32px;
+        aspect-ratio: 1 / 1;
+        position: absolute;
+        top: 22px;
+        left: 22px;
+    }
+
+    .modal2 .menu-tab nav {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        top: 121px;
+        left: 50px;
+    }
+
+    .modal2 .menu-tab nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .modal2 .menu-tab nav ul li {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--btn-p-color);
+    }
+
+    .modal2 .menu-tab .btn-download {
+        position: absolute;
+        top: 293px;
+        left: 40px;
     }
 }
